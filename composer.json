@@ -1,0 +1,38 @@
+{
+  "name": "causelabs/resource-index-link",
+  "description": "A Laravel Nova Resource Index Link field.",
+  "authors": [
+      {
+          "name": "Rick Sharp",
+          "email": "rick@causelabs.com",
+          "homepage": "http://www.causelabs.com",
+          "role": "Lead Developer"
+      }
+  ],
+  "keywords": [
+    "laravel",
+    "nova",
+    "link"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Causelabs\\ResourceIndexLink\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CauseLabs\\ResourceIndexLink\\FieldServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
