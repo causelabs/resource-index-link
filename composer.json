@@ -1,6 +1,7 @@
 {
   "name": "causelabs/resource-index-link",
   "description": "A Laravel Nova Resource Index Link field.",
+  "version": "0.2.1",
   "authors": [
       {
           "name": "Rick Sharp",
@@ -26,7 +27,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "CauseLabs\\ResourceIndexLink\\FieldServiceProvider"
+        "Causelabs\\ResourceIndexLink\\FieldServiceProvider"
       ]
     }
   },
