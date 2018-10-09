@@ -29,3 +29,7 @@ Make the link open the resource in a new tab
 ResourceIndexLink::make('name')
     ->newTab(),
 ```
+## Example
+Make the resource name a link to the resource.
+
+![Sample Index Page](docs/index_screenshot.png?raw=true "Title")
