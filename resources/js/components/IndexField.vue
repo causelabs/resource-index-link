@@ -18,7 +18,7 @@ export default {
     props: ['resourceName', 'field'],
     computed: {
         target () {
-            return field.newTab ? '_blank' : '_self'
+            return this.field.newTab ? '_blank' : '_self'
         }
     }
 }
