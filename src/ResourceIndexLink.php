@@ -1,8 +1,9 @@
 <?php
 
-namespace CauseLabs\ResourceIndexLink;
+namespace Causelabs\ResourceIndexLink;
 
 use Laravel\Nova\Fields\Text;
+use Config;
 
 class ResourceIndexLink extends Text
 {

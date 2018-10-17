@@ -13,7 +13,7 @@ composer require causelabs/resource-index-link
 
 Add the field to your resource in the ```fields``` method:
 ```php
-use CauseLabs\ResourceIndexLink\ResourceIndexLink;
+use Causelabs\ResourceIndexLink\ResourceIndexLink;
 
 ResourceIndexLink::make('name')
     ->rules(/* ... */),

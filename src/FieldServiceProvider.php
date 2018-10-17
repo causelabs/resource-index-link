@@ -1,6 +1,6 @@
 <?php
 
-namespace CauseLabs\ResourceIndexLink;
+namespace Causelabs\ResourceIndexLink;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
