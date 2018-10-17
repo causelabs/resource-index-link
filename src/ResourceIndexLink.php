@@ -48,6 +48,11 @@ class ResourceIndexLink extends Text
      */
     protected function setResourceId($id)
     {
-        return $this->withMeta(['id' => $id, 'nova_path' => Config::get('nova.path')]);
+        $path = Config::get('nova.path');
+        // If the path is the site route, prevent a double-slash
+        if ('/' === $path) {
+            $path = '';
+        }
+        return $this->withMeta(['id' => $id, 'nova_path' => $path]);
     }
 }
