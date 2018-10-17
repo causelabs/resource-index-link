@@ -42,12 +42,12 @@ class ResourceIndexLink extends Text
     /**
      * Sets the
      *
-     * @param mixed $id The ID of the resource model
+     * @param mixed $id The ID of the resource model. Also sets the base URL based on the Nova config
      *
      * @return void
      */
     protected function setResourceId($id)
     {
-        return $this->withMeta(['id' => $id]);
+        return $this->withMeta(['id' => $id, 'nova_path' => Config::get('nova.path')]);
     }
 }

@@ -3,7 +3,7 @@
         <div v-if="field.value">
             <div class="flex items-center font-bold">
                 <a
-                    :href="`/nova/resources/${resourceName}/${field.id}`"
+                    :href="`${field.nova_path}/resources/${resourceName}/${field.id}`"
                     :target="target"
                     class="no-underline text-primary"
                     >{{ field.value }}</a>
