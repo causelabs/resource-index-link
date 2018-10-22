@@ -2,11 +2,14 @@
     <div>
         <div v-if="field.value">
             <div class="flex items-center font-bold">
-                <a
-                    :href="`${field.nova_path}/resources/${resourceName}/${field.id}`"
+                <router-link
+                    :to="{ name: 'detail', params: {
+                        resourceName: resourceName,
+                        resourceId: field.id
+                    }}"
+                    :title="field.value"
                     :target="target"
-                    class="no-underline text-primary"
-                    >{{ field.value }}</a>
+                    >{{ field.value }}</router-link>
             </div>
         </div>
         <p v-else>&nbsp;</p>
