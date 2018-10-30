@@ -27,20 +27,20 @@ class ResourceIndexLink extends Text
     /**
      * Overriding the base method in order to grab the model ID.
      *
-     * @param mixed  $resource  The resource class
-     * @param string $attribute The attribute of the resource
+     * @param mixed       $resource  The resource class
+     * @param string|null $attribute The attribute of the resource
      *
      * @return mixed
      */
-    protected function resolveAttribute($resource, $attribute)
+    public function resolve($resource, $attribute = null)
     {
         $this->setResourceId(data_get($resource, 'id'));
 
-        return parent::resolveAttribute($resource, $attribute);
+        return parent::resolve($resource, $attribute);
     }
 
     /**
-     * Sets the
+     * Sets the ID of the resource. Used when builing the URL.
      *
      * @param mixed $id The ID of the resource model. Also sets the base URL based on the Nova config
      *
