@@ -1,7 +1,6 @@
 {
   "name": "causelabs/resource-index-link",
   "description": "A Laravel Nova Resource Index Link field.",
-  "version": "1.0.1",
   "authors": [
       {
           "name": "Rick Sharp",
