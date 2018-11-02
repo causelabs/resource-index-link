@@ -9,6 +9,7 @@
                     }}"
                     :title="field.value"
                     :target="target"
+                    class="no-underline dim text-primary font-bold"
                     >{{ field.value }}</router-link>
             </div>
         </div>
