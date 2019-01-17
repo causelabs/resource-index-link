@@ -34,7 +34,7 @@ class ResourceIndexLink extends Text
      */
     public function resolve($resource, $attribute = null)
     {
-        $this->setResourceId(data_get($resource, 'id'));
+        $this->setResourceId(data_get($resource, method_exists($resource, 'getKeyName') ? $resource->getKeyName() : 'id'));
 
         return parent::resolve($resource, $attribute);
     }
