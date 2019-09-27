@@ -3,7 +3,7 @@
         <div v-if="field.value">
             <div class="flex items-center font-bold">
                 <router-link
-                    :to="{ name: 'detail', params: {
+                    :to="{ name: routerLinkName, params: {
                         resourceName: resourceName,
                         resourceId: field.id
                     }}"
@@ -23,6 +23,9 @@ export default {
     computed: {
         target () {
             return this.field.newTab ? '_blank' : '_self'
+        },
+        routerLinkName () {
+            return ('index_links_to_form' in this.field && this.field.index_links_to_form == true) ? 'edit' :  'detail';
         }
     }
 }

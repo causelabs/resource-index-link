@@ -55,4 +55,14 @@ class ResourceIndexLink extends Text
         }
         return $this->withMeta(['id' => $id, 'nova_path' => $path]);
     }
+
+    /**
+     * Configures the index to link to the edit screen instead of the detail screen.
+     *
+     * @return ResourceIndexLink
+     */
+    public function indexLinksToForm()
+    {
+        return $this->withMeta(['index_links_to_form' => true]);
+    }
 }
