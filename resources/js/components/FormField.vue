@@ -6,6 +6,7 @@
                 :class="errorClasses"
                 :placeholder="field.name"
                 v-model="value"
+                :dusk="field.attribute"
             />
         </template>
     </default-field>
